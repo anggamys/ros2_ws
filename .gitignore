@@ -1,0 +1,11 @@
+# Build folder
+build/
+install/
+log/
+
+# Confiuration
+.vscode
+.ropeproject
+
+# Package (Under development or testing)
+kamera_viewer/
