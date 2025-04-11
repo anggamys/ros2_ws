@@ -1,50 +1,49 @@
-# Dokumentasi ROS
+# Personal ROS 2 Workspace
 
-## Deskripsi
+## Overview
 
-## Instalasi
+Repository ini merupakan workspace pribadi ROS 2 Humble yang berisi berbagai package dan konfigurasi untuk pengembangan sistem berbasis ROS 2.
 
-### Projek baru (Package baru)
+## Installation
 
-1. Masuk ke folder workspace
-
-   ```bash
-   cd ~/ros2_ws/src
-   ```
-
-2. Buat package baru
-
-   Untuk membuat package baru dengan menggunakan ament_cmake (C++), gunakan perintah berikut:
+1. Clone repository:
 
    ```bash
-   ros2 pkg create --build-type ament_cmake --license Apache-2.0 <package_name>
+   git clone https://github.com/anggamys/ros2_ws.git
    ```
 
-   > Gantilah `<package_name>` dengan nama package yang diinginkan.
-
-   Untuk membuat package baru dengan menggunakan ament_python (Python), gunakan perintah berikut:
+2. Inisialisasi submodule:
 
    ```bash
-   ros2 pkg create --build-type ament_python --license Apache-2.0 <package_name>
+   git submodule update --init --recursive
    ```
 
-   > Gantilah `<package_name>` dengan nama package yang diinginkan.
-
-3. Build package
-
-   Jika package sudah dibuat, kita perlu membangun package tersebut agar dapat digunakan. Gunakan perintah berikut untuk membangun package.
-
-   Build semua package yang ada di dalam workspace:
+3. Install dependency:
 
    ```bash
-   colcon build
+   rosdep install -i --from-path src --rosdistro humble -y
    ```
 
-   Build package tertentu:
+## Usage
 
-   ```bash
-   colcon build --packages-select <package_name>
-   ```
+Untuk panduan lengkap penggunaan dan pengembangan package, lihat [usage.md](usage.md).
 
-   > Gantilah `<package_name>` dengan nama package yang ingin dibangun.
-   > Pastikan untuk menjalankan perintah ini di dalam folder workspace (misalnya `~/ros2_ws`).
+### 1. Build workspace
+
+```bash
+colcon build
+```
+
+### 2. Source workspace
+
+```bash
+source install/setup.bash
+```
+
+### 3. Jalankan node
+
+```bash
+ros2 run package_name node_name
+```
+
+> Ganti `package_name` dan `node_name` dengan nama package dan node yang ingin dijalankan.
