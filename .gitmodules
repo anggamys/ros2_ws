@@ -1,3 +1,6 @@
 [submodule "src/object_detection"]
 	path = src/object_detection
 	url = git@github.com:anggamys/object_detection.git
+[submodule "src/coordinat_location"]
+	path = src/coordinat_location
+	url = git@github.com:anggamys/coordinat_location.git
