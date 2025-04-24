@@ -4,3 +4,6 @@
 [submodule "src/coordinat_location"]
 	path = src/coordinat_location
 	url = git@github.com:anggamys/coordinat_location.git
+[submodule "src/yolo_python_ros"]
+	path = src/yolo_python_ros
+	url = git@github.com:anggamys/yolo_python_ros.git
