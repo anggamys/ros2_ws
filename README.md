@@ -2,23 +2,23 @@
 
 ## Overview
 
-Repository ini merupakan workspace pribadi ROS 2 Humble yang berisi berbagai package dan konfigurasi untuk pengembangan sistem berbasis ROS 2.
+This repository is a personal ROS 2 Humble workspace that contains various packages and configurations used for developing ROS 2-based systems.
 
 ## Installation
 
-1. Clone repository:
+1. Clone the repository:
 
    ```bash
    git clone https://github.com/anggamys/ros2_ws.git
    ```
 
-2. Inisialisasi submodule:
+2. Initialize submodules:
 
    ```bash
    git submodule update --init --recursive
    ```
 
-3. Install dependency:
+3. Install dependencies:
 
    ```bash
    rosdep install -i --from-path src --rosdistro humble -y
@@ -26,24 +26,24 @@ Repository ini merupakan workspace pribadi ROS 2 Humble yang berisi berbagai pac
 
 ## Usage
 
-Untuk panduan lengkap penggunaan dan pengembangan package, lihat [usage.md](usage.md).
+For detailed usage instructions and package development guides, refer to [docs/usage.md](docs/usage.md).
 
-### 1. Build workspace
+### 1. Build the workspace
 
 ```bash
 colcon build
 ```
 
-### 2. Source workspace
+### 2. Source the workspace
 
 ```bash
 source install/setup.bash
 ```
 
-### 3. Jalankan node
+### 3. Run a node
 
 ```bash
-ros2 run package_name node_name
+ros2 run <package_name> <node_name>
 ```
 
-> Ganti `package_name` dan `node_name` dengan nama package dan node yang ingin dijalankan.
+> Replace `<package_name>` and `<node_name>` with the desired package and node name.
