@@ -7,3 +7,6 @@
 [submodule "src/yolo_python_ros"]
 	path = src/yolo_python_ros
 	url = git@github.com:anggamys/yolo_python_ros.git
+[submodule "src/simulation_world"]
+	path = src/simulation_world
+	url = git@github.com:anggamys/simulation_world.git
