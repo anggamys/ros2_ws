@@ -1,49 +1,73 @@
-# Personal ROS 2 Workspace
+# ROS 2 Workspace
 
 ## Overview
 
-This repository is a personal ROS 2 Humble workspace that contains various packages and configurations used for developing ROS 2-based systems.
+This is a ROS 2 workspace that contains various packages and configurations for building and running ROS 2 applications.
 
-## Installation
+This workspace is used for testing and development purposes. It includes packages for different functionalities, such as navigation, perception, and control.
 
-1. Clone the repository:
+You can see this specific workspace documentation in the [workspace documentation](docs/).
+
+## How to Use
+
+Pre-requisites:
+
+- Ensure you have ROS 2 installed on your system. For installation instructions, refer to the [ROS 2 Installation Guide](https://docs.ros.org/en/humble/Installation.html).
+- Make sure you have the necessary dependencies installed.
+
+### Cloning the Workspace
+
+1. Clone the repository to your local machine:
 
    ```bash
    git clone https://github.com/anggamys/ros2_ws.git
    ```
 
-2. Initialize submodules:
+2. Navigate to the workspace directory:
+
+   ```bash
+   cd ros2_ws
+   ```
+
+   > You need add the submodules to your workspace. If you have cloned the repository without submodules, you can add them by running:
 
    ```bash
    git submodule update --init --recursive
    ```
 
-3. Install dependencies:
+### Building the Workspace
+
+For official build instructions, refer to the [ROS 2 Build Documentation](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html).
+
+1. Install the necessary dependencies:
 
    ```bash
-   rosdep install -i --from-path src --rosdistro humble -y
+   sudo apt update
+   sudo apt install -y python3-colcon-common-extensions
    ```
 
-## Usage
+2. Build the workspace:
 
-For detailed usage instructions and package development guides, refer to [docs/usage.md](docs/usage.md).
+   ```bash
+   colcon build
+   ```
 
-### 1. Build the workspace
+   > You can build specific packages by specifying their names:
+
+   ```bash
+   colcon build --packages-select <package_name>
+   ```
+
+3. Source the setup script:
+
+   ```bash
+   source install/setup.bash
+   ```
+
+### Running the Packages
+
+For running the packages, refer to the individual package documentation. Generally, you can run a package using:
 
 ```bash
-colcon build
+ros2 run <package_name> <executable_name>
 ```
-
-### 2. Source the workspace
-
-```bash
-source install/setup.bash
-```
-
-### 3. Run a node
-
-```bash
-ros2 run <package_name> <node_name>
-```
-
-> Replace `<package_name>` and `<node_name>` with the desired package and node name.
