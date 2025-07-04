@@ -34,6 +34,7 @@ To create a new ROS 2 package and include it as a Git submodule in your workspac
 
    ```bash
    git rm -r --cached <package_name>
+   rm -rf <package_name>
    git submodule add <repository-url> <package_name>
    ```
 
