@@ -9,3 +9,5 @@ log/
 
 # Package (Under development or testing)
 kamera_viewer/
+BehaviorTree.CPP/
+learn_behavior_tree/
