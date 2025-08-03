@@ -10,3 +10,6 @@
 [submodule "src/simulation_world"]
 	path = src/simulation_world
 	url = git@github.com:anggamys/simulation_world.git
+[submodule "src/pixhawk_controller"]
+	path = src/pixhawk_controller
+	url = git@github.com:anggamys/pixhawk_controller.git
