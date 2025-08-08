@@ -13,3 +13,6 @@
 [submodule "src/pixhawk_controller"]
 	path = src/pixhawk_controller
 	url = git@github.com:anggamys/pixhawk_controller.git
+[submodule "src/janus_publisher"]
+	path = src/janus_publisher
+	url = git@github.com:anggamys/janus_publisher.git
