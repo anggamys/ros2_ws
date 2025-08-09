@@ -13,3 +13,6 @@
 [submodule "src/janus_publisher"]
 	path = src/janus_publisher
 	url = git@github.com:anggamys/janus_publisher.git
+[submodule "src/ntrip_nmea_bridge"]
+	path = src/ntrip_nmea_bridge
+	url = git@github.com:anggamys/ntrip_nmea_bridge.git
