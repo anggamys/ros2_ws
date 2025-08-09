@@ -39,13 +39,13 @@ ros2 pkg create --build-type ament_cmake --license Apache-2.0 <package_name>
 To build the entire workspace:
 
 ```bash
-colcon build
+colcon build --symlink-install
 ```
 
 To build a specific package only:
 
 ```bash
-colcon build --packages-select <package_name>
+colcon build --symlink-install --packages-select <package_name>
 ```
 
 > Replace `<package_name>` with the name of the package you want to build.
