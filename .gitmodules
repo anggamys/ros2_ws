@@ -16,6 +16,3 @@
 [submodule "src/ntrip_nmea_bridge"]
 	path = src/ntrip_nmea_bridge
 	url = git@github.com:anggamys/ntrip_nmea_bridge.git
-[submodule "src/mqtt_publisher_cpp"]
-	path = src/mqtt_publisher_cpp
-	url = git@github.com:anggamys/mqtt_publisher_cpp.git
