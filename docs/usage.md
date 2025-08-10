@@ -29,10 +29,11 @@ ros2 pkg create --build-type ament_python --license Apache-2.0 <package_name>
 To create a C++-based package:
 
 ```bash
-ros2 pkg create --build-type ament_cmake --license Apache-2.0 <package_name>
+ros2 pkg create --build-type ament_cmake --license Apache-2.0 <package_name> --dependencies rclcpp std_msgs
 ```
 
 > Replace `<package_name>` with your desired package name.
+> This command creates a new C++ package with the specified dependencies. You can add more dependencies by listing them after the `--dependencies` option.
 
 ## Building the Workspace
 
