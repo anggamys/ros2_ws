@@ -21,4 +21,4 @@
 	url = git@github.com:anggamys/mqtt_publisher_cpp.git
 [submodule "src/navigation_system"]
 	path = src/navigation_system
-	url = git@github.com:anggamys/navigation_system.git
+	url = git@github.com:nautronica/navigation_system.git
