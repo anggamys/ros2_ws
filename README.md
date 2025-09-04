@@ -49,14 +49,16 @@ For official build instructions, refer to the [ROS 2 Build Documentation](https:
 2. Build the workspace:
 
    ```bash
-   colcon build
+   colcon build --symlink-install
    ```
 
    > You can build specific packages by specifying their names:
 
    ```bash
-   colcon build --packages-select <package_name>
+   colcon build --symlink-install --packages-select <package_name>
    ```
+
+   > Replace `<package_name>` with the name of the package you want to build.
 
 3. Source the setup script:
 
